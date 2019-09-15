@@ -94,7 +94,11 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  11
+  big = 0 
+  game_hash.each do |key, hash|
+    p hash[:players]
+    puts
+  end 
 end 
 
 p big_shoe_rebounds
