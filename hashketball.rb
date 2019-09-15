@@ -101,7 +101,7 @@ def big_shoe_rebounds
     end
   end
   big.sort
-  p big.last
+  p big
   game_hash.each do |key, hash|
     hash[:players].each do |elem|
       p elem.first.last[:shoe]
