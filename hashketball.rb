@@ -94,15 +94,15 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  big = 0 
+  big = [] 
   game_hash.each do |key, hash|
     hash[:players].each do |elem|
       p elem
-      p elem.first.last[:shoe]
+      big <<  elem.first.last[:shoe]
       puts
     end
   end
-  big
+  big.sort
 end 
 
 p big_shoe_rebounds
