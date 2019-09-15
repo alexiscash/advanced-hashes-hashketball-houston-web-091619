@@ -101,14 +101,13 @@ def big_shoe_rebounds
     end
   end
   big.sort!
-  p big
   game_hash.each do |key, hash|
     hash[:players].each do |elem|
-      p elem.first.last[:shoe]
-      p elem.first.last[:shoe] == big.last 
+      if elem.first.last[:shoe] == big.last
+        return elem.first.last[:rebounds]
+      end
     end
   end 
-  nil
 end 
 
 p big_shoe_rebounds
