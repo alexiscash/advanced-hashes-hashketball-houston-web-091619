@@ -93,10 +93,10 @@ def player_stats(name)
   end
 end
 
-def big_shoe_rebounds(name)
+def big_shoe_rebounds
   11
 end 
 
-p player_stats("Alan Anderson")
+p big_shoe_rebounds
 
 
