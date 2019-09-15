@@ -96,7 +96,7 @@ end
 def big_shoe_rebounds
   big = 0 
   game_hash.each do |key, hash|
-    p hash[:players]
+    p hash[:players].first
     puts
   end
   big
