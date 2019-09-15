@@ -97,12 +97,16 @@ def big_shoe_rebounds
   big = [] 
   game_hash.each do |key, hash|
     hash[:players].each do |elem|
-      p elem
       big <<  elem.first.last[:shoe]
-      puts
     end
   end
   big.sort
+  game_hash.each do |key, hash|
+    hash[:players].each do |elem|
+      p elem 
+    end
+  end 
+  nil
 end 
 
 p big_shoe_rebounds
